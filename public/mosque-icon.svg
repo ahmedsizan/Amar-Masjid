@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="domeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with smooth gradient and shadow -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  
+  <!-- Outer decorative ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.4" />
+  
+  <!-- Main Mosque Dome -->
+  <path d="M 256 120 C 290 190 350 240 350 340 L 162 340 C 162 240 222 190 256 120 Z" fill="url(#domeGrad)" />
+  
+  <!-- Minaret Left -->
+  <path d="M 120 220 L 140 220 L 140 380 L 120 380 Z" fill="#059669" />
+  <path d="M 115 220 L 130 180 L 145 220 Z" fill="url(#goldGrad)" />
+  
+  <!-- Minaret Right -->
+  <path d="M 372 220 L 392 220 L 392 380 L 372 380 Z" fill="#059669" />
+  <path d="M 367 220 L 382 180 L 397 220 Z" fill="url(#goldGrad)" />
+  
+  <!-- Base Building -->
+  <rect x="140" y="340" width="232" height="60" rx="8" fill="#065f46" />
+  
+  <!-- Mosque Arch Door -->
+  <path d="M 226 400 L 226 340 C 226 310 286 310 286 340 L 286 400 Z" fill="url(#goldGrad)" />
+  
+  <!-- Crescent Moon & Star atop dome -->
+  <path d="M 256 80 A 24 24 0 1 0 274 116 A 20 20 0 1 1 256 80 Z" fill="url(#goldGrad)" />
+  <polygon points="266,90 270,98 278,98 272,104 274,112 266,106 258,112 260,104 254,98 262,98" fill="url(#goldGrad)" />
+</svg>

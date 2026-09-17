@@ -1,0 +1,18 @@
+{
+  "name": "Amar Masjid - আমাদের মসজিদ",
+  "short_name": "Amar Masjid",
+  "description": "Smart community portal for mosque prayer times, notices, and donations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/mosque-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
