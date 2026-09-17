@@ -1,16 +1,77 @@
-# React + Vite
+# 🕌 Amar Masjid (আমাদের মসজিদ)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+একটি আধুনিক ও নান্দনিক মসজিদ পোর্টাল ওয়েব ও মোবাইল অ্যাপ্লিকেশন (Progressive Web App - PWA)। মুসল্লিরা সহজে ওয়াক্ত অনুযায়ী নামাজের সময়সূচী, মসজিদের নোটিশ এবং সরাসরি মসজিদে অনুদান (Payment) পাঠাতে পারবেন। এটি যেকোনো কম্পিউটার বা স্মার্টফোনে সরাসরি অ্যাপ হিসেবে ইনস্টল করা যায়।
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 মূল বৈশিষ্ট্যসমূহ (Features)
 
-## React Compiler
+- 📱 **মোবাইল ইনস্টলেশন (PWA Support):** কোনো অ্যাপ স্টোর ছাড়াই যেকোনো অ্যান্ড্রয়েড বা আইফোনে ইনস্টল করা যায়।
+- ⏰ **লাইভ নামাজের সময়সূচী:** প্রতি ওয়াক্তের আজান ও জামাত সময়, এবং পরবর্তী ওয়াক্তের লাইভ কাউন্টডাউন।
+- 📢 **মসজিদ নোটিশ বোর্ড:** গুরুত্বপূর্ণ ঘোষণা, জুমা ও মাহফিলের তথ্য।
+- 💳 **অনলাইন দান ও পেমেন্ট:** বিকাশ (bKash), নগদ (Nagad), রকেট ও কার্ডের মাধ্যমে অনুদান গ্রহণ করার ব্যবস্থা।
+- ⚡ **সুপাবেস (Supabase) ব্যাকএন্ড:** রিয়েলটাইম ডাটাবেজ ও ক্লাউড স্টোরেজ।
+- 🚀 **ভার্সেল (Vercel) লাইভ হোস্টিং:** ১ ক্লিকে লাইভ ফ্রি ডিপ্লয়মেন্ট।
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🚀 গিটহাব (GitHub)-এ পুশ করার নিয়ম
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+আপনি যদি গিটহাবে নতুন হন, নিচের ৩টি সহজ ধাপ অনুসরণ করুন:
+
+1. [GitHub](https://github.com/new) এ গিয়ে লগইন করে একটি নতুন রিপোজিটরি তৈরি করুন (যেমন: `amar-masjid`)।
+2. আপনার কম্পিউটারের টার্মিনালে নিচের কমান্ডগুলো রান করুন (আপনার GitHub রিপোজিটরি লিংক দিয়ে রিপ্লেস করুন):
+
+```bash
+# ১. গিটহাবে রিমোট রিপোজিটরি লিংক করুন
+git remote add origin https://github.com/YOUR_USERNAME/amar-masjid.git
+
+# ২. মেইন ব্রাঞ্চ পুশ করুন
+git push -u origin main
+```
+
+পরবর্তীতে কোড পরিবর্তন করলে শুধুমাত্র এই ৩টি কমান্ড দিলেই গিটহাবে আপডেট হয়ে যাবে:
+```bash
+git add .
+git commit -m "Update message"
+git push
+```
+
+---
+
+## 🗄️ সুপাবেস (Supabase) ব্যাকএন্ড সংযোগ
+
+1. [Supabase](https://supabase.com/) এ গিয়ে বিনামূল্যে একটি অ্যাকাউন্ট খুলে **New Project** তৈরি করুন।
+2. প্রজেক্ট তৈরির পর বাম পাশের মেনু থেকে **Settings (গিয়ার আইকন)** &rarr; **API** সেকশনে যান।
+3. সেখান থেকে `Project URL` এবং `Project API Keys (anon public)` কপি করুন।
+4. আপনার প্রোজেক্টের রুট ফোল্ডারে থাকা `.env` ফাইলে এগুলো বসিয়ে দিন:
+
+```env
+VITE_SUPABASE_URL=https://xxxxxxxxxxxx.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+---
+
+## 🌐 ভার্সেল (Vercel)-এ লাইভ হোস্টিং
+
+1. [Vercel](https://vercel.com/) এ যান এবং **Sign up with GitHub** দিয়ে লগইন করুন।
+2. **Add New...** &rarr; **Project** বাটনে ক্লিক করুন।
+3. আপনার গিটহাবের `amar-masjid` রিপোজিটরিটি দেখতে পাবেন, পাশে থাকা **Import** বাটনে ক্লিক করুন।
+4. **Environment Variables** সেকশনে আপনার Supabase-এর `VITE_SUPABASE_URL` এবং `VITE_SUPABASE_ANON_KEY` যুক্ত করুন।
+5. **Deploy** বাটনে ক্লিক করুন! কয়েক সেকেন্ডের মধ্যেই আপনার ওয়েবসাইট লাইভ হয়ে যাবে এবং একটি ফ্রি লিংক (যেমন: `amar-masjid.vercel.app`) পাবেন।
+
+---
+
+## 💻 লোকাল কম্পিউটারে রান করার নিয়ম
+
+```bash
+# প্যাকেজ ইনস্টল
+npm run install
+
+# লোকাল সার্ভার চালু
+npm run dev
+
+# প্রোডাকশন বিল্ড
+npm run build
+```
